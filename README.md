@@ -1,23 +1,35 @@
-# RAMbo: AI Chatbot with Multi-Model Support (GPT-4o, Gemini, Claude)
+# RAMbo: AI Chatbot with Conversation Memory & Multi-Model Support (GPT-4o, Gemini, Claude)
+
 💪 RAMbo is ready for action! Will you keep him as a fun chatbot, or turn him into an AI warrior? 🚀🔥
 
-### **What’s New?**
-✅ **Supports GPT-4o, Gemini, and Claude** (user picks the AI).  
-✅ **API keys stored in `config.py`** for easy setup.  
-✅ **Fun branding for RAMbo!**  
-
-RAMbo is a fun, AI-powered chatbot that supports **OpenAI’s GPT-4o**, **Google’s Gemini 2.0**, and **Anthropic’s Claude 3.5/3.7**. By default, it uses **GPT-4o**, but you can easily switch to another model by editing `config.py`.
+**RAMbo** is a fun, local AI assistant supporting **OpenAI GPT-4**, **Google Gemini**, and **Anthropic Claude**. It maintains conversation context and can also browse & summarize webpages.
 
 ## Features
-- **Chat with AI:** RAMbo can answer your questions using the selected model.
-- **Webpage Summarization:** Enter a URL, and RAMbo will fetch the content and generate a summary.
-- **Multi-Model Support:** Choose between GPT-4o, Gemini 2.0, and Claude 3.5.
-- **Easy Configuration:** Set your preferred AI model by editing `config.py`.
+
+- **Conversation Memory**: Stores your chat history so RAMbo can use context.
+- **Multi-Model Support**: Switch between GPT-4, Gemini, or Claude via `config.py`.
+- **Browse & Summarize**: Enter a URL, and RAMbo will fetch it with Selenium and provide a summary.
+
+## Table of Contents
+
+1. [Requirements](#requirements)  
+2. [Installation](#installation)  
+3. [Configuration](#configuration)  
+4. [Usage](#usage)  
+5. [Switching AI Models](#switching-ai-models)  
+6. [Notes & Limitations](#notes--limitations)  
+7. [License](#license)
+
+## Requirements
+
+- **Python 3.7+**  
+- **Chrome Browser** plus the matching [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)  
+- Valid **API keys** (OpenAI, Gemini, or Claude)
 
 ## Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/RAMbo.git
-   cd RAMbo
-   ```
+```bash
+git clone https://github.com/RedHatRanger/RAMbo.git
+cd RAMbo
+pip install -r requirements.txt
+```
