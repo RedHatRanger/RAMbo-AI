@@ -27,7 +27,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/YourUsername/RAMbo.git
+git clone https://github.com/RedHatRanger/RAMbo.git
 cd RAMbo
 pip install -r requirements.txt
 ```
