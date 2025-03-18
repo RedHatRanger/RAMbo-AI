@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAMbo - Webpage Summarizer</title>
+</head>
+<body>
+    <h1>RAMbo: Browse & Summarize</h1>
+
+    <form method="POST">
+        <label for="url">Enter a URL:</label><br>
+        <input type="text" id="url" name="url" placeholder="https://example.com" style="width:300px;">
+        <button type="submit">Browse & Summarize</button>
+    </form>
+
+    <hr>
+    <h2>Summary</h2>
+    <p>{{ page_summary }}</p>
+
+    <hr>
+    <p><a href="/">Back to Chat</a></p>
+</body>
+</html>
