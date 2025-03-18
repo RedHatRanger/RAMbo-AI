@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAMbo - AI Chat</title>
+</head>
+<body>
+    <h1>RAMbo: Your AI Chat Assistant</h1>
+
+    <form method="POST">
+        <input type="text" name="user_input" placeholder="Type your question..." style="width:300px;">
+        <button type="submit">Send</button>
+    </form>
+
+    <hr>
+    <h2>Conversation</h2>
+    <div>
+        {% for msg in conversation %}
+            {% if msg.role == "user" %}
+                <p><strong>You:</strong> {{ msg.content }}</p>
+            {% else %}
+                <p><strong>RAMbo:</strong> {{ msg.content }}</p>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <hr>
+    <p><a href="/browse">Try browsing a webpage!</a></p>
+</body>
+</html>
